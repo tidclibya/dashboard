@@ -37,6 +37,9 @@
       border-radius: 10px;
       margin-bottom: 30px;
     }
+    table.dataTable {
+      direction: rtl;
+    }
   </style>
 </head>
 <body>
@@ -71,16 +74,43 @@
     const map = L.map('map').setView([26.5, 17.0], 6);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
+    const icons = {
+      "فندق": new L.Icon.Default(),
+      "منتجع": new L.Icon({
+        iconUrl: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -30]
+      }),
+      "منطقة استثمار": new L.Icon({
+        iconUrl: 'https://maps.google.com/mapfiles/ms/icons/orange-dot.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -30]
+      })
+    };
+
     fetch('./tourism_pois.json')
       .then(res => res.json())
       .then(data => {
         let tableRows = '';
+        const bounds = [];
+
         data.forEach(poi => {
-          const marker = L.marker([poi.lat, poi.lon]).addTo(map)
+          const marker = L.marker([poi.lat, poi.lon], {
+            icon: icons[poi.type] || icons["فندق"]
+          }).addTo(map)
             .bindPopup(`<b>${poi.name}</b><br>${poi.description}`);
+
+          bounds.push([poi.lat, poi.lon]);
 
           tableRows += `<tr><td>${poi.name}</td><td>${poi.description}</td><td>${poi.type}</td></tr>`;
         });
+
+        if (bounds.length > 0) {
+          map.fitBounds(bounds);
+        }
+
         document.getElementById('dataBody').innerHTML = tableRows;
         $('#dataTable').DataTable();
       });
