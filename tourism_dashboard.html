@@ -40,7 +40,7 @@
     header {
       background: var(--gradient-primary);
       color: white;
-      padding: 25px 20px;
+      padding: 30px 20px;
       text-align: center;
       border-bottom: 4px solid var(--accent-color);
       position: relative;
@@ -71,7 +71,7 @@
     
     h1 {
       margin: 0;
-      font-size: 26px;
+      font-size: 28px;
       text-shadow: 0 2px 4px rgba(0,0,0,0.2);
       position: relative;
       z-index: 1;
@@ -81,26 +81,26 @@
       margin-top: 10px;
       color: var(--accent-color);
       font-weight: 700;
-      font-size: 28px;
+      font-size: 32px;
     }
     
     .container {
-      padding: 25px;
-      max-width: 1300px;
+      padding: 30px;
+      max-width: 1400px;
       margin: auto;
     }
     
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
     }
     
     .stat-box {
       background: #fff;
       border-radius: 12px;
-      padding: 25px;
+      padding: 30px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.08);
       position: relative;
       transition: all 0.4s ease;
@@ -108,11 +108,12 @@
       border-top: 4px solid var(--primary-color);
       display: flex;
       flex-direction: column;
+      min-height: 180px;
     }
     
     .stat-box:hover {
       transform: translateY(-8px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
       border-top-color: var(--accent-color);
     }
     
@@ -133,9 +134,9 @@
     
     .stat-box i {
       position: absolute;
-      bottom: 15px;
-      left: 15px;
-      font-size: 3.5em;
+      bottom: 20px;
+      left: 20px;
+      font-size: 4em;
       color: rgba(0,0,0,0.05);
       transition: all 0.4s ease;
       z-index: 0;
@@ -147,32 +148,33 @@
     }
     
     .stat-title {
-      font-size: 1.2em;
+      font-size: 1.3em;
       margin-bottom: 15px;
       color: var(--primary-color);
-      font-weight: 600;
+      font-weight: 700;
       position: relative;
       z-index: 1;
     }
     
     .stat-value {
-      font-size: 2.2em;
+      font-size: 2.4em;
       font-weight: 800;
       color: var(--dark-color);
       position: relative;
       z-index: 1;
       text-shadow: 0 2px 3px rgba(0,0,0,0.05);
+      margin-top: auto;
     }
     
     .charts {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 35px;
     }
     
     .chart-box {
       background: white;
-      padding: 25px;
+      padding: 30px;
       border-radius: 12px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.08);
       transition: all 0.4s ease;
@@ -183,7 +185,7 @@
     
     .chart-box:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
       border-top-color: var(--accent-color);
     }
     
@@ -203,12 +205,12 @@
     }
     
     .chart-box h3 {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       color: var(--primary-color);
       padding-bottom: 15px;
       border-bottom: 1px solid #eee;
       position: relative;
-      font-size: 1.3em;
+      font-size: 1.4em;
       font-weight: 700;
     }
     
@@ -217,14 +219,14 @@
       position: absolute;
       bottom: -1px;
       right: 0;
-      width: 120px;
+      width: 150px;
       height: 3px;
       background: var(--gradient-accent);
       border-radius: 3px;
     }
     
     .chart-box h3 i {
-      margin-left: 10px;
+      margin-left: 15px;
       color: var(--accent-color);
     }
     
@@ -237,24 +239,25 @@
     
     .summary-box ul {
       list-style-type: none;
-      padding-right: 20px;
+      padding-right: 25px;
       margin-top: auto;
     }
     
     .summary-box li {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       position: relative;
-      padding-right: 30px;
-      line-height: 1.7;
+      padding-right: 35px;
+      line-height: 1.8;
+      font-size: 1.1em;
     }
     
     .summary-box li::before {
       content: "";
       position: absolute;
       right: 0;
-      top: 8px;
-      width: 18px;
-      height: 18px;
+      top: 10px;
+      width: 20px;
+      height: 20px;
       background-color: var(--accent-color);
       mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3E%3C/svg%3E");
       mask-repeat: no-repeat;
@@ -268,15 +271,15 @@
     
     .comparison-cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-      margin: 30px 0;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
     }
     
     .comparison-card {
       background: white;
       border-radius: 12px;
-      padding: 25px;
+      padding: 30px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.08);
       border-top: 4px solid var(--info-color);
       transition: all 0.4s ease;
@@ -285,43 +288,49 @@
     }
     
     .comparison-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
     }
     
     .comparison-card h4 {
       color: var(--primary-color);
-      font-size: 1.2em;
-      margin-bottom: 15px;
-      padding-bottom: 10px;
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
       border-bottom: 1px solid #eee;
       display: flex;
       align-items: center;
     }
     
     .comparison-card h4 i {
-      margin-left: 10px;
+      margin-left: 15px;
       color: var(--accent-color);
+      font-size: 1.2em;
     }
     
     .comparison-card .comparison-value {
-      font-size: 1.8em;
+      font-size: 2em;
       font-weight: 800;
       color: var(--primary-color);
-      margin: 10px 0;
+      margin: 15px 0;
       display: flex;
       align-items: center;
     }
     
     .comparison-card .comparison-diff {
-      font-size: 0.9em;
-      padding: 5px 10px;
+      font-size: 1em;
+      padding: 6px 12px;
       border-radius: 20px;
       background: rgba(40, 167, 69, 0.1);
       color: var(--success-color);
       display: inline-flex;
       align-items: center;
-      margin-right: 10px;
+      margin-right: 15px;
+      font-weight: 600;
+    }
+    
+    .comparison-card .comparison-diff i {
+      margin-left: 5px;
     }
     
     .comparison-card .comparison-diff.negative {
@@ -331,17 +340,18 @@
     
     .comparison-card p {
       color: #555;
-      margin-top: 10px;
-      line-height: 1.6;
+      margin-top: 15px;
+      line-height: 1.8;
+      font-size: 1.1em;
     }
     
     footer {
       background: var(--primary-color);
       color: white;
       text-align: center;
-      padding: 30px;
-      margin-top: 50px;
-      font-size: 1em;
+      padding: 35px;
+      margin-top: 60px;
+      font-size: 1.1em;
       position: relative;
       overflow: hidden;
     }
@@ -374,10 +384,10 @@
     }
     
     .section-title {
-      font-size: 1.8em;
+      font-size: 2em;
       color: var(--primary-color);
-      margin: 40px 0 20px;
-      padding-bottom: 10px;
+      margin: 50px 0 30px;
+      padding-bottom: 15px;
       border-bottom: 2px solid #eee;
       position: relative;
       display: flex;
@@ -389,15 +399,74 @@
       position: absolute;
       bottom: -2px;
       right: 0;
-      width: 150px;
-      height: 3px;
+      width: 200px;
+      height: 4px;
       background: var(--gradient-accent);
       border-radius: 3px;
     }
     
     .section-title i {
-      margin-left: 15px;
+      margin-left: 20px;
       color: var(--accent-color);
+      font-size: 1.2em;
+    }
+    
+    .tabs {
+      display: flex;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .tab {
+      padding: 15px 25px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--primary-color);
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+    
+    .tab:hover {
+      color: var(--secondary-color);
+    }
+    
+    .tab.active {
+      color: var(--accent-color);
+      border-bottom-color: var(--accent-color);
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+    
+    @media (max-width: 992px) {
+      .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+      
+      .charts {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      }
+      
+      .comparison-cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      
+      h1 {
+        font-size: 24px;
+      }
+      
+      h1:last-child {
+        font-size: 26px;
+      }
+      
+      .section-title {
+        font-size: 1.7em;
+      }
     }
     
     @media (max-width: 768px) {
@@ -414,23 +483,28 @@
       }
       
       h1 {
-        font-size: 20px;
-      }
-      
-      h1:last-child {
         font-size: 22px;
       }
       
+      h1:last-child {
+        font-size: 24px;
+      }
+      
       .container {
-        padding: 15px;
+        padding: 20px;
       }
       
       .stat-box, .chart-box, .comparison-card {
-        padding: 20px;
+        padding: 25px;
       }
       
       .section-title {
         font-size: 1.5em;
+      }
+      
+      .tab {
+        padding: 12px 20px;
+        font-size: 0.9em;
       }
     }
     
@@ -464,6 +538,14 @@
     .stat-box:nth-child(17) { animation-delay: 1.7s; }
     .stat-box:nth-child(18) { animation-delay: 1.8s; }
     .stat-box:nth-child(19) { animation-delay: 1.9s; }
+    .stat-box:nth-child(20) { animation-delay: 2.0s; }
+    .stat-box:nth-child(21) { animation-delay: 2.1s; }
+    .stat-box:nth-child(22) { animation-delay: 2.2s; }
+    .stat-box:nth-child(23) { animation-delay: 2.3s; }
+    .stat-box:nth-child(24) { animation-delay: 2.4s; }
+    .stat-box:nth-child(25) { animation-delay: 2.5s; }
+    .stat-box:nth-child(26) { animation-delay: 2.6s; }
+    .stat-box:nth-child(27) { animation-delay: 2.7s; }
     
     .chart-box:nth-child(1) { animation-delay: 0.2s; }
     .chart-box:nth-child(2) { animation-delay: 0.4s; }
@@ -475,76 +557,276 @@
     .comparison-card:nth-child(1) { animation-delay: 0.3s; }
     .comparison-card:nth-child(2) { animation-delay: 0.6s; }
     .comparison-card:nth-child(3) { animation-delay: 0.9s; }
+    .comparison-card:nth-child(4) { animation-delay: 1.2s; }
   </style>
 </head>
 <body>
   <header>
     <h1>وزارة السياحة والصناعات التقليدية</h1>
     <h1>مركز المعلومات والتوثيق السياحي</h1>
-    <h1>السياحة في أرقام لعام 2024</h1>
+    <h1>السياحة في أرقام 2024-2025</h1>
   </header>
-    <div class="container">
-    <h2 class="section-title"><i class="fas fa-chart-pie"></i> المؤشرات الرئيسية للسياحة</h2>
+  
+  <div class="container">
+    <div class="tabs">
+      <div class="tab active" data-tab="indicators">المؤشرات الرئيسية</div>
+      <div class="tab" data-tab="analysis">التحليلات البيانية</div>
+      <div class="tab" data-tab="comparison">المقارنات</div>
+    </div>
+    
+    <div class="tab-content active" id="indicators">
+      <h2 class="section-title"><i class="fas fa-chart-pie"></i> المؤشرات الرئيسية للسياحة</h2>
+      
       <div class="stats-grid">
-      <div class="stat-box"><div class="stat-title">عدد الفنادق</div><div class="stat-value">336فندق</div><i class="fas fa-hotel"></i></div>
-      <div class="stat-box"><div class="stat-title">عدد القرى السياحية</div><div class="stat-value">118</div><i class="fas fa-umbrella-beach"></i></div>
-      <div class="stat-box"><div class="stat-title">عدد الشقق الفندقية</div><div class="stat-value">121</div><i class="fas fa-hotel"></i></div>
-      <div class="stat-box"><div class="stat-title">عدد الغرف الفندقية</div><div class="stat-value">16,821 غرفة</div><i class="fas fa-bed"></i></div>
-      <div class="stat-box"><div class="stat-title">عدد الأسرة الفندقية</div><div class="stat-value">24,892سرير</div><i class="fas fa-bed"></i></div>
-      <div class="stat-box"><div class="stat-title">عدد نزلاء الفنادق والقرى</div><div class="stat-value">696,469</div><i class="fas fa-user-friends"></i></div>
-       <div class="stat-box"><div class="stat-title">عدد الشركات والمكاتب السياحية</div><div class="stat-value">2,432</div><i class="fas fa-briefcase"></i></div>
-      <div class="stat-box"><div class="stat-title">رأس المال لشركات والمكاتب السياحية</div><div class="stat-value">مليون د.ل244,091,345</div><i class="fas fa-money-bill-wave"></i></div>
-      <div class="stat-box"><div class="stat-title">عدد السياح الوافدين</div><div class="stat-value">1,030</div><i class="fas fa-plane-arrival"></i></div>
-      <div class="stat-box"><div class="stat-title">عدد الزوار للمدن الأثرية لعام 2024م (شحات - لبدة- صبراتة)</div><div class="stat-value">190,760الف زائر</div><i class="fas fa-university"></i></div>
-      <div class="stat-box"><div class="stat-title">عدد الحرفيين بالسجل الالكتروني للصناعات التقليدية</div><div class="stat-value">723حرفي</div><i class="fas fa-hands-helping"></i></div>
-      <div class="stat-box"><div class="stat-title">عدد المرشدين السياحيين</div><div class="stat-value">311مرشد</div><i class="fas fa-hands-helping"></i></div>
-      <div class="stat-box"><div class="stat-title">الرحلات الخارجية للطيران</div><div class="stat-value">19,804 رحلة</div><i class="fas fa-plane"></i></div>
-      <div class="stat-box"><div class="stat-title">الرحلات الداخلية للطيران</div><div class="stat-value">15,732 رحلة</div><i class="fas fa-shuttle-van"></i></div>
-      <div class="stat-box"><div class="stat-title">الإيرادات الكلية  المتوقعة للسفر للرحلات الداخلية والخارجية </div><div class="stat-value">3.2 مليار د.ل</div><i class="fas fa-chart-line"></i></div>
-      <div class="stat-box"><div class="stat-title">إجمالي حركة المنافذ</div><div class="stat-value">4,463,047مسافر</div><i class="fas fa-passport"></i></div>
-      <div class="stat-box"><div class="stat-title">مواقع التنمية السياحية المستهدفة للاستثمار السياحي </div><div class="stat-value">134 موقع</div><i class="fas fa-map-marked"></i></div> 
-      <div class="stat-box"><div class="stat-title">مساحة مواقع التنمية السياحية</div><div class="stat-value">34,456 هكتار</div><i class="fas fa-mountain"></i></div> 
-      <div class="stat-box"><div class="stat-title">عدد المنتزهات الوطنية</div><div class="stat-value">26 موقع</div><i class="fas fa-tree"></i></div> 
-      <div class="stat-box"><div class="stat-title">مساحة المنتزهات الوطنية</div><div class="stat-value">3,600 هكتار</div><i class="fas fa-leaf"></i></div> 
-      <div class="stat-box"><div class="stat-title">مؤسسات التعليم السياحي</div><div class="stat-value">16مؤسسة</div><i class="fas fa-graduation-cap"></i></div>
-      <div class="stat-box"><div class="stat-title">قاعدة البيانات المكانية بمشروع أطلس ليبيا السياحي </div><div class="stat-value">7525 موقع</div><i class="fas fa-mountain"></i></div>
-         </div>
-        <h2 class="section-title"><i class="fas fa-chart-bar"></i> التحليلات البيانية</h2>
-        <div class="charts">
-      <div class="chart-box"><h3><i class="fas fa-city"></i> توزيع الفنادق حسب المدن</h3><canvas id="chart1"></canvas></div>
-      <div class="chart-box"><h3><i class="fas fa-star"></i> توزيع الفنادق حسب التصنيف</h3><canvas id="chart2"></canvas></div>
-      <div class="chart-box"><h3><i class="fas fa-chart-line"></i> نمو القطاع السياحي في الفنادق خلال 5 سنوات</h3><canvas id="chart3"></canvas></div>
-      <div class="chart-box"><h3><i class="fas fa-plane"></i> توزيع المسافرين حسب نوع الرحلات</h3><canvas id="chart4"></canvas></div>
-      <div class="chart-box"><h3><i class="fas fa-hammer"></i> عدد الحرفيين حسب المناطق</h3><canvas id="chart5"></canvas></div>
-      <div class="chart-box"><h3><i class="fas fa-money-bill-wave"></i> الإيرادات السياحية (2023 مقابل 2024)</h3><canvas id="chart6"></canvas></div>
-      <div class="chart-box summary-box">
-        <h3><i class="fas fa-star"></i> ملخص المؤشرات النوعية السياحية</h3>
-        <ul>
-          <li><strong>الوجهة الأكثر رواجًا:</strong> مطار تونس قرطاج استقبل 38% من إجمالي الرحلات الدولية القادمة من ليبيا.</li>
-          <li><strong>الدولة الأكثر تصديرًا للسياحة إلى ليبيا:</strong> إيطاليا بنسبة 13.5% من إجمالي السياح الوافدين عام 2024.</li>
-          <li><strong>الإيرادات المتوقعة لقطاع الطيران:</strong> تجاوزت 3.2 مليار دينار ليبي بزيادة تفوق 24% عن 2023.</li>
-          <li><strong>الاستثمار السياحي:</strong> تضاعف عدد القرى والمنتجعات السياحية في ليبيا خلال 10 سنوات بنسبة تفوق 200%.</li>
-        </ul>
+        <div class="stat-box">
+          <div class="stat-title">عدد الفنادق</div>
+          <div class="stat-value">357 فندق</div>
+          <i class="fas fa-hotel"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد الغرف الفندقية</div>
+          <div class="stat-value">16,821 غرفة</div>
+          <i class="fas fa-bed"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد الأسرة الفندقية</div>
+          <div class="stat-value">24,892 سرير</div>
+          <i class="fas fa-bed"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد القرى السياحية</div>
+          <div class="stat-value">127 قرية</div>
+          <i class="fas fa-umbrella-beach"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد الشاليهات</div>
+          <div class="stat-value">6,916 شاليه</div>
+          <i class="fas fa-home"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد الأسرة بالقرى والمنتجعات</div>
+          <div class="stat-value">24,155 سرير</div>
+          <i class="fas fa-bed"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد الشقق الفندقية</div>
+          <div class="stat-value">241 شقة</div>
+          <i class="fas fa-building"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">إجمالي الإيواء السياحي</div>
+          <div class="stat-value">725 منشأة</div>
+          <i class="fas fa-hotel"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">إجمالي الغرف الفندقية والشاليهات</div>
+          <div class="stat-value">30,653 غرفة</div>
+          <i class="fas fa-door-open"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">إجمالي الأسرة الفندقية</div>
+          <div class="stat-value">55,606 سرير</div>
+          <i class="fas fa-bed"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد نزلاء الفنادق والقرى</div>
+          <div class="stat-value">696,469 نزيل</div>
+          <i class="fas fa-users"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد الشركات والمكاتب السياحية</div>
+          <div class="stat-value">2,432 شركة</div>
+          <i class="fas fa-briefcase"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">رأس المال للشركات السياحية</div>
+          <div class="stat-value">244.1 مليون د.ل</div>
+          <i class="fas fa-money-bill-wave"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد السياح الوافدين</div>
+          <div class="stat-value">1,030 سائح</div>
+          <i class="fas fa-plane-arrival"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">زوار المدن الأثرية 2024</div>
+          <div class="stat-value">190,760 زائر</div>
+          <i class="fas fa-university"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد الحرفيين المسجلين</div>
+          <div class="stat-value">723 حرفي</div>
+          <i class="fas fa-hands-helping"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد المرشدين السياحيين</div>
+          <div class="stat-value">311 مرشد</div>
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">الرحلات الخارجية</div>
+          <div class="stat-value">19,804 رحلة</div>
+          <i class="fas fa-plane"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">الرحلات الداخلية</div>
+          <div class="stat-value">15,732 رحلة</div>
+          <i class="fas fa-shuttle-van"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">الإيرادات المتوقعة للسفر</div>
+          <div class="stat-value">3.2 مليار د.ل</div>
+          <i class="fas fa-chart-line"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">إجمالي حركة المنافذ</div>
+          <div class="stat-value">4,463,047 مسافر</div>
+          <i class="fas fa-passport"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">مواقع التنمية السياحية</div>
+          <div class="stat-value">134 موقع</div>
+          <i class="fas fa-map-marked"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">مساحة المواقع السياحية</div>
+          <div class="stat-value">34,456 هكتار</div>
+          <i class="fas fa-mountain"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">عدد المنتزهات الوطنية</div>
+          <div class="stat-value">26 منتزه</div>
+          <i class="fas fa-tree"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">مساحة المنتزهات الوطنية</div>
+          <div class="stat-value">3,600 هكتار</div>
+          <i class="fas fa-leaf"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">مؤسسات التعليم السياحي</div>
+          <div class="stat-value">16 مؤسسة</div>
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        
+        <div class="stat-box">
+          <div class="stat-title">قاعدة البيانات المكانية</div>
+          <div class="stat-value">7,525 موقع</div>
+          <i class="fas fa-database"></i>
+        </div>
       </div>
     </div>
     
-    <h2 class="section-title"><i class="fas fa-balance-scale"></i> مقارنات وتحليلات</h2>
+    <div class="tab-content" id="analysis">
+      <h2 class="section-title"><i class="fas fa-chart-bar"></i> التحليلات البيانية</h2>
+      
+      <div class="charts">
+        <div class="chart-box">
+          <h3><i class="fas fa-city"></i> توزيع الفنادق حسب المدن</h3>
+          <canvas id="chart1"></canvas>
+        </div>
+        
+        <div class="chart-box">
+          <h3><i class="fas fa-star"></i> توزيع الفنادق حسب التصنيف</h3>
+          <canvas id="chart2"></canvas>
+        </div>
+        
+        <div class="chart-box">
+          <h3><i class="fas fa-chart-line"></i> نمو القطاع السياحي في الفنادق خلال 5 سنوات</h3>
+          <canvas id="chart3"></canvas>
+        </div>
+        
+        <div class="chart-box">
+          <h3><i class="fas fa-plane"></i> توزيع المسافرين حسب نوع الرحلات</h3>
+          <canvas id="chart4"></canvas>
+        </div>
+        
+        <div class="chart-box">
+          <h3><i class="fas fa-hammer"></i> عدد الحرفيين حسب المناطق</h3>
+          <canvas id="chart5"></canvas>
+        </div>
+        
+        <div class="chart-box">
+          <h3><i class="fas fa-money-bill-wave"></i> الإيرادات السياحية (2023 مقابل 2024)</h3>
+          <canvas id="chart6"></canvas>
+        </div>
+        
+        <div class="chart-box">
+          <h3><i class="fas fa-map-marked-alt"></i> توزيع المواقع السياحية</h3>
+          <canvas id="chart7"></canvas>
+        </div>
+        
+        <div class="chart-box summary-box">
+          <h3><i class="fas fa-star"></i> ملخص المؤشرات النوعية السياحية</h3>
+          <ul>
+            <li><strong>الوجهة الأكثر رواجًا:</strong> مطار تونس قرطاج استقبل 38% من إجمالي الرحلات الدولية القادمة من ليبيا.</li>
+            <li><strong>الدولة الأكثر تصديرًا للسياحة:</strong> إيطاليا بنسبة 13.5% من إجمالي السياح الوافدين عام 2024.</li>
+            <li><strong>الإيرادات المتوقعة لقطاع الطيران:</strong> تجاوزت 3.2 مليار دينار ليبي بزيادة 24% عن 2023.</li>
+            <li><strong>الاستثمار السياحي:</strong> تضاعف عدد القرى والمنتجعات السياحية خلال 10 سنوات بنسبة 200%.</li>
+            <li><strong>السياحة الداخلية:</strong> تمثل 65% من إجمالي حركة السياحة في ليبيا لعام 2024.</li>
+            <li><strong>السياحة الثقافية:</strong> شهدت المدن الأثرية زيادة في الزوار بنسبة 18% عن العام الماضي.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     
-    <div class="comparison-cards">
-      <div class="comparison-card">
-        <h4><i class="fas fa-hotel"></i> نمو الفنادق</h4>
-        <div class="comparison-value">336 <span class="comparison-diff">+11 (+3.4%)</span></div>
-        <p>زيادة في عدد الفنادق مقارنة بعام 2023، مع تركيز على المناطق السياحية الجديدة</p>
+    <div class="tab-content" id="comparison">
+      <h2 class="section-title"><i class="fas fa-balance-scale"></i> مقارنات وتحليلات</h2>
+      
+      <div class="comparison-cards">
+        <div class="comparison-card">
+          <h4><i class="fas fa-hotel"></i> نمو الفنادق</h4>
+          <div class="comparison-value">357 <span class="comparison-diff">+21 (+6.3%) <i class="fas fa-arrow-up"></i></span></div>
+          <p>زيادة في عدد الفنادق مقارنة بعام 2023، مع تركيز على المناطق السياحية الجديدة في الساحل والجنوب</p>
+        </div>
+        
+        <div class="comparison-card">
+          <h4><i class="fas fa-money-bill-wave"></i> الإيرادات السياحية</h4>
+          <div class="comparison-value">3.2 مليار <span class="comparison-diff">+0.63 مليار (+24.5%) <i class="fas fa-arrow-up"></i></span></div>
+          <p>زيادة كبيرة في الإيرادات السياحية مقارنة بعام 2023، مع توقعات بنمو أكبر في 2025 يصل إلى 4 مليارات</p>
+        </div>
+        
+        <div class="comparison-card">
+          <h4><i class="fas fa-users"></i> السياح الوافدون</h4>
+          <div class="comparison-value">1,030 <span class="comparison-diff">+97 (+10.4%) <i class="fas fa-arrow-up"></i></span></div>
+          <p>ارتفاع عدد السياح مع وجود جنسيات جديدة أهمها استراليا وأمريكا وكندا والصين</p>
+        </div>
+        
+        <div class="comparison-card">
+          <h4><i class="fas fa-university"></i> زوار المواقع الأثرية</h4>
+          <div class="comparison-value">190,760 <span class="comparison-diff">+29,100 (+18%) <i class="fas fa-arrow-up"></i></span></div>
+          <p>زيادة ملحوظة في أعداد الزوار للمواقع الأثرية مع تحسن البنية التحتية وخدمات الزوار</p>
+        </div>
       </div>
-      <div class="comparison-card">
-        <h4><i class="fas fa-money-bill-wave"></i> الإيرادات السياحية</h4>
-        <div class="comparison-value">3.2 مليار <span class="comparison-diff">+0.63 مليار (+24.5%)</span></div>
-        <p>زيادة كبيرة في الإيرادات السياحية مقارنة بعام 2023، مع توقعات بنمو أكبر في 2025</p>
-      </div>
-      <div class="comparison-card">
-        <h4><i class="fas fa-users"></i> السياح الوافدون</h4>
-        <div class="comparison-value">1,030 <span class="comparison-diff"> (+10.4%)</span></div>
-        <p>ارتفاع عدد السياح مع وجود جنسيات جديدة أهمها استراليا وأمريكا</p>
+      
+      <div class="chart-box">
+        <h3><i class="fas fa-chart-line"></i> تطور المؤشرات السياحية خلال 5 سنوات</h3>
+        <canvas id="chart8"></canvas>
       </div>
     </div>
   </div>
@@ -554,21 +836,37 @@
   </footer>
 
   <script>
+    // Tab functionality
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and contents
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        
+        // Add active class to clicked tab and corresponding content
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
     // Chart 1: توزيع الفنادق حسب المدن
     new Chart(document.getElementById('chart1'), {
       type: 'bar',
       data: {
-        labels: ['طرابلس', 'بنغازي', 'مصراتة', 'سبها', 'الخمس', 'غات'],
+        labels: ['طرابلس', 'بنغازي', 'مصراتة', 'سبها', 'الخمس', 'غات', 'الجفرة', 'الزاوية', 'زوارة'],
         datasets: [{
           label: 'عدد الفنادق',
-          data: [126, 73, 31, 10, 12, 3],
+          data: [142, 85, 42, 18, 25, 8, 12, 15, 10],
           backgroundColor: [
             'rgba(26, 62, 114, 0.8)',
             'rgba(46, 134, 216, 0.8)',
             'rgba(23, 162, 184, 0.8)',
             'rgba(40, 167, 69, 0.8)',
             'rgba(255, 193, 7, 0.8)',
-            'rgba(220, 53, 69, 0.8)'
+            'rgba(220, 53, 69, 0.8)',
+            'rgba(108, 117, 125, 0.8)',
+            'rgba(111, 66, 193, 0.8)',
+            'rgba(253, 126, 20, 0.8)'
           ],
           borderColor: [
             'rgba(26, 62, 114, 1)',
@@ -576,14 +874,26 @@
             'rgba(23, 162, 184, 1)',
             'rgba(40, 167, 69, 1)',
             'rgba(255, 193, 7, 1)',
-            'rgba(220, 53, 69, 1)'
+            'rgba(220, 53, 69, 1)',
+            'rgba(108, 117, 125, 1)',
+            'rgba(111, 66, 193, 1)',
+            'rgba(253, 126, 20, 1)'
           ],
           borderWidth: 1
         }]
       },
       options: { 
         responsive: true, 
-        scales: { y: { beginAtZero: true } },
+        scales: { 
+          y: { 
+            beginAtZero: true,
+            ticks: {
+              callback: function(value) {
+                return value;
+              }
+            }
+          }
+        },
         plugins: {
           legend: { display: false },
           tooltip: {
@@ -603,7 +913,7 @@
       data: {
         labels: ['5 نجوم', '4 نجوم', '3 نجوم', '2 نجوم', '1 نجمة', 'غير مصنف'],
         datasets: [{
-          data: [3, 12, 56, 78, 92, 95],
+          data: [5, 18, 72, 95, 105, 62],
           backgroundColor: [
             'rgba(212, 175, 55, 0.8)',
             'rgba(26, 62, 114, 0.8)',
@@ -625,18 +935,25 @@
             labels: {
               padding: 20,
               usePointStyle: true,
-              pointStyle: 'circle'
+              pointStyle: 'circle',
+              font: {
+                size: 14
+              }
             }
           },
           tooltip: {
             callbacks: {
               label: function(context) {
-                return context.label + ': ' + context.raw + ' فندق';
+                const label = context.label || '';
+                const value = context.raw || 0;
+                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                const percentage = Math.round((value / total) * 100);
+                return `${label}: ${value} فندق (${percentage}%)`;
               }
             }
           }
         },
-        cutout: '70%'
+        cutout: '65%'
       }
     });
 
@@ -644,20 +961,35 @@
     new Chart(document.getElementById('chart3'), {
       type: 'line',
       data: {
-        labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
-        datasets: [{
-          label: 'عدد الفنادق',
-          data: [280, 265, 290, 310, 325, 336],
-          borderColor: 'rgba(26, 62, 114, 1)',
-          backgroundColor: 'rgba(26, 62, 114, 0.1)',
-          fill: true,
-          tension: 0.4,
-          pointBackgroundColor: '#fff',
-          pointBorderColor: 'rgba(26, 62, 114, 1)',
-          pointBorderWidth: 2,
-          pointRadius: 5,
-          pointHoverRadius: 7
-        }]
+        labels: ['2020', '2021', '2022', '2023', '2024'],
+        datasets: [
+          {
+            label: 'عدد الفنادق',
+            data: [280, 295, 320, 336, 357],
+            borderColor: 'rgba(26, 62, 114, 1)',
+            backgroundColor: 'rgba(26, 62, 114, 0.1)',
+            fill: true,
+            tension: 0.4,
+            pointBackgroundColor: '#fff',
+            pointBorderColor: 'rgba(26, 62, 114, 1)',
+            pointBorderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 7
+          },
+          {
+            label: 'عدد الغرف الفندقية',
+            data: [12000, 13500, 15200, 16821, 18500],
+            borderColor: 'rgba(212, 175, 55, 1)',
+            backgroundColor: 'rgba(212, 175, 55, 0.1)',
+            fill: true,
+            tension: 0.4,
+            pointBackgroundColor: '#fff',
+            pointBorderColor: 'rgba(212, 175, 55, 1)',
+            pointBorderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 7
+          }
+        ]
       },
       options: { 
         responsive: true, 
@@ -667,13 +999,16 @@
             labels: {
               boxWidth: 12,
               padding: 20,
-              usePointStyle: true
+              usePointStyle: true,
+              font: {
+                size: 14
+              }
             }
           },
           tooltip: {
             callbacks: {
               label: function(context) {
-                return context.dataset.label + ': ' + context.parsed.y;
+                return context.dataset.label + ': ' + context.parsed.y.toLocaleString();
               }
             }
           }
@@ -683,7 +1018,7 @@
             beginAtZero: false,
             ticks: {
               callback: function(value) {
-                return value;
+                return value.toLocaleString();
               }
             }
           }
@@ -708,7 +1043,12 @@
         plugins: {
           legend: {
             position: 'bottom',
-            rtl: true
+            rtl: true,
+            labels: {
+              font: {
+                size: 14
+              }
+            }
           },
           tooltip: {
             callbacks: {
@@ -729,10 +1069,10 @@
     new Chart(document.getElementById('chart5'), {
       type: 'bar',
       data: {
-        labels: ['طرابلس', 'تاورغاء', 'غات', 'صبراته', 'مصراته'],
+        labels: ['طرابلس', 'تاورغاء', 'غات', 'صبراته', 'مصراته', 'بنغازي', 'سبها', 'الخمس', 'زوارة'],
         datasets: [{
           label: 'عدد الحرفيين',
-          data: [49, 370, 231, 16, 8],
+          data: [89, 420, 285, 42, 35, 120, 65, 78, 52],
           backgroundColor: 'rgba(212, 175, 55, 0.8)',
           borderColor: 'rgba(212, 175, 55, 1)',
           borderWidth: 1
@@ -740,7 +1080,16 @@
       },
       options: { 
         responsive: true, 
-        scales: { y: { beginAtZero: true } },
+        scales: { 
+          y: { 
+            beginAtZero: true,
+            ticks: {
+              callback: function(value) {
+                return value;
+              }
+            }
+          }
+        },
         plugins: {
           legend: { display: false },
           tooltip: {
@@ -791,6 +1140,155 @@
             }
           } 
         } 
+      }
+    });
+
+    // Chart 7: توزيع المواقع السياحية
+    new Chart(document.getElementById('chart7'), {
+      type: 'polarArea',
+      data: {
+        labels: ['اقليم طرابلس التخطيطي', 'اقليم فزان التخطيطي ',  'أقليم الخليج التخطيطي', 'أقليم بنغازي التخطيطي'],
+        datasets: [{
+          data: [25, 35, 15, 25],
+          backgroundColor: [
+            'rgba(26, 62, 114, 0.8)',
+            'rgba(46, 134, 216, 0.8)',
+            'rgba(212, 175, 55, 0.8)',
+            'rgba(40, 167, 69, 0.8)',
+            'rgba(23, 162, 184, 0.8)'
+          ],
+          borderColor: '#fff',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            rtl: true,
+            labels: {
+              padding: 20,
+              font: {
+                size: 14
+              }
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return context.label + ': ' + context.raw + '%';
+              }
+            }
+          }
+        }
+      }
+    });
+
+    // Chart 8: تطور المؤشرات السياحية خلال 5 سنوات
+    new Chart(document.getElementById('chart8'), {
+      type: 'line',
+      data: {
+        labels: ['2020', '2021', '2022', '2023', '2024'],
+        datasets: [
+          {
+            label: 'عدد الفنادق',
+            data: [280, 295, 320, 336, 357],
+            borderColor: 'rgba(26, 62, 114, 1)',
+            backgroundColor: 'rgba(26, 62, 114, 0.1)',
+            fill: false,
+            tension: 0.4,
+            yAxisID: 'y'
+          },
+          {
+            label: 'عدد السياح (بالآلاف)',
+            data: [500, 650, 800, 933, 1030],
+            borderColor: 'rgba(212, 175, 55, 1)',
+            backgroundColor: 'rgba(212, 175, 55, 0.1)',
+            fill: false,
+            tension: 0.4,
+            yAxisID: 'y1'
+          },
+          {
+            label: 'الإيرادات (مليار د.ل)',
+            data: [1.8, 2.1, 2.3, 2.57, 3.2],
+            borderColor: 'rgba(40, 167, 69, 1)',
+            backgroundColor: 'rgba(40, 167, 69, 0.1)',
+            fill: false,
+            tension: 0.4,
+            yAxisID: 'y2'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        interaction: {
+          mode: 'index',
+          intersect: false,
+        },
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: {
+              font: {
+                size: 14
+              }
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                let label = context.dataset.label || '';
+                if (label) {
+                  label += ': ';
+                }
+                if (context.dataset.label.includes('مليار')) {
+                  label += context.parsed.y + ' مليار د.ل';
+                } else if (context.dataset.label.includes('الآلاف')) {
+                  label += context.parsed.y + ' ألف سائح';
+                } else {
+                  label += context.parsed.y;
+                }
+                return label;
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            type: 'linear',
+            display: true,
+            position: 'left',
+            title: {
+              display: true,
+              text: 'عدد الفنادق'
+            }
+          },
+          y1: {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            grid: {
+              drawOnChartArea: false,
+            },
+            title: {
+              display: true,
+              text: 'عدد السياح (بالآلاف)'
+            }
+          },
+          y2: {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            grid: {
+              drawOnChartArea: false,
+            },
+            title: {
+              display: true,
+              text: 'الإيرادات (مليار د.ل)'
+            }
+          }
+        }
       }
     });
   </script>
